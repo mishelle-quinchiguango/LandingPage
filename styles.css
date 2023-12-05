@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,100&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color_white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway";
+}
+
+/* start styles navbar*/
+
+.navbar_header {
+  height: 83px;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar_header .navbar_nav {
+  height: 100%; /*nos aseguramos q tenga todo el alto del padre (header)*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_header .navbar_nav a {
+  /*para el texto alternativo de la imágen*/
+  text-decoration: none;
+  color: var(--color_white);
+  padding: 0 20px;
+  font-size: 20px;
+}
+.navbar_header .navbar_nav a .navbar_logo {
+  padding: 0 122px;
+}
+/*styles links*/
+/*
+.navbar_header .navbar_container_links{
+    display: flex;
+    gap: 16px;
+}
+*/
+.navbar_header .navbar_nav .navbar_container_links a {
+  text-decoration: none;
+  color: var(--color_white);
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.navbar_header .navbar_nav .navbar_container_links {
+  height: 10px;
+}
+.navbar_header .navbar_nav .navbar_container_links .icono_menu {
+  height: 20px;
+  padding: 0px 20px;
+  border-left: 1px solid var(--color_white);
+}
+
+.navbar_header .navbar_container_links .link_login {
+  border-right: 1px solid var(--color_white);
+}
+
+/*Start_ Home Landing*/
+.home_section_presentation {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("./img/home_background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.home_section_presentation .input_background_find {
+  width: 360px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: transparent;
+  padding: 0px 0px 0px 20px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  color: var(--color_white);
+  position: relative;
+  left: 212%;
+  bottom: 230px;
+}
+
+input::placeholder {
+  color: var(--color_white);
+}
+.home_section_presentation .icono_lupa {
+  position: absolute;
+  left: 90%;
+  top: 19%;
+  cursor: pointer;
+}
+.home_section_presentation .home_section_conteiner_text {
+  height: fit-content;
+  position: absolute;
+  left: 100px;
+  top: 400px;
+}
+
+.home_section_presentation .home_section_conteiner_text h4 {
+  color: #b4b7b7;
+  font-family: "Raleway";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.home_section_presentation .home_section_conteiner_text h1 {
+  height: 99px;
+  color: var(--color_white);
+  padding: 0 4px;
+  font-family: "Raleway";
+  font-size: 40px;
+  font-style: normal;
+  margin-bottom: 25px;
+}
+
+.home_section_presentation .home_section_conteiner_text .link_propietaries {
+  padding: 20px 50px 20px 100px;
+  text-decoration: none;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  color: var(--color_white);
+}
+
+.icono-texto {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  .icono_castillo {
+    height: 20px;
+    width: auto;
+  }
+
+}
+
+/*FOLLOW*/
+
+.home_section_presentation .contenedor_follow {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: fixed;
+  color: #7e7e7e;
+}
+
+.home_section_presentation .linea {
+  height: 70px;
+  width: 1px;
+  margin: 20px;
+}
+.contenedor_follow b {
+  transform: rotate(90deg);
+  color: #7e7e7e;
+}
+
+.contenedor_follow .link_propietaries {
+  height: 2px;
+}
+
+/*start first part  texto*/
+
+.contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 50px 100px 0px;
+  gap: 100px;
+  height: 200px;
+}
+
+.contenedor1 .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedor_imagenes_parte1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  overflow-x: hidden;
+  gap: 10px;
+}
+
+.imagenes1 {
+  grid-column: span 5;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagenes1:hover {
+  cursor: pointer;
+}
+
+.imagenes1:hover div {
+  background-color: var(--color_white);
+  color: black;
+}
+.imagenes1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*para q solo se vea distorsionada la imagen*/
+}
+.active1 {
+  grid-column: span 2;
+}
+
+.imagenes1 div {
+  position: absolute;
+  color: var(--color_white);
+  z-index: 1;
+  bottom: 0; /*para q este abajo del padre*/
+  left: 0px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+/*start second part  texto*/
+span {
+  color: #df991b;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+}
+h2 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.contenedor2 div p {
+  padding: 40px 0 0 0;
+}
+.button_view {
+  font-weight: 400;
+  border: solid 1px black;
+  background-color: transparent;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+.button_prev {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: #b4b7b7;
+  font-weight: 400;
+  gap: 10px;
+}
+
+.button_next {
+  background-color: transparent;
+  border: none;
+  color: #df991b;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.buttons .button_prev img {
+  width: 15px;
+  height: 20px;
+}
+
+.buttons .button_next img {
+  width: fit-content;
+  height: 20px;
+}
+
+/*contenido parte 2*/
+.contenedor2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0px 50px 50px;
+  gap: 100px;
+}
+
+.contenedor2 .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedor_imagenes_parte2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  overflow-x: hidden;
+  gap: 10px;
+}
+
+.imagenes {
+  grid-column: span 5;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagenes:hover {
+  cursor: pointer;
+}
+
+.imagenes:hover p {
+  background-color: var(--color_white);
+  color: black;
+}
+.imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*para q solo se vea distorsionada la imagen*/
+}
+.active {
+  grid-column: span 2;
+}
+
+
+.imagenes div {
+    position: absolute;
+    color: var(--color_white);
+    z-index: 1;
+    bottom: 0; /*para q este abajo del padre*/
+    left: 0px;
+    width: 100%;
+    transition: 0.3s ease;
+  }
+  .imagenes p {
+    padding: 0 !important;
+  }
+/* contenedor_collage*/
+.contenedor_collage_principal p {
+  color: #df991b;
+  text-align: center;
+}
+
+.contenedor_collage_principal .contenedor_collage p {
+  color: black;
+  text-align: left;
+}
+
+.contenedor_collage_principal h2 {
+  text-align: center;
+}
+
+.contenedor_collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px;
+  gap: 10px;
+
+  width: auto;
+}
+
+.contenedor_collage img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*contenedor parte 4*/
+
+.contenedor4 {
+  display: flex;
+  padding: 50px;
+}
+
+.contenedor4 .contenedor_imagenes_parte4 {
+  display: flex;
+  padding: 0px 30px 0px 0px;
+}
+
+.contenedor4 .contenedor_imagenes_parte4 .imagen_fondo {
+  display: flex;
+  padding: 0px 30px 0px 0px;
+  position: absolute;
+  height: 260px;
+}
+
+.contenedor4 .contenedor_imagenes_parte4 .imagen_service {
+  display: flex;
+  padding: 0px 30px 0px 0px;
+  position: relative;
+  height: 200px;
+  width: 500px;
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+}
+
+.contenedor4 .contenedor_imagenes_parte4 .imagen_service img {
+  width: 400px;
+  height: 250px;
+}
+
+.contenedor4 .contenedor_imagenes_parte4 .imagen_fondo img {
+  width: 250px;
+  height: 330px;
+}
+
+.contenedor4 .textos .contenido h2 {
+  padding: 0px 0px 40px 0px;
+}
+
+.contenedor4 .textos .contenido p {
+  padding: 0px 0px 50px 0px;
+}
+
+.contenedor4 .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Pie de página parte 1*/
+
+.piePagina .piepag_parte1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px;
+  gap: 170px;
+  width: auto;
+  background-color: black;
+  height: auto;
+  position: absolute;
+  padding-top: 200px;
+}
+
+.piePagina .piepag_parte1 img {
+  padding: 0 0px 40px 0;
+}
+
+.piePagina .piepag_parte1 .contenedor_informacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.piePagina .piepag_parte1 .contenedor_lugares {
+  display: flex;
+  flex-direction: column;
+}
+
+.piePagina .piepag_parte1 .contenedor_lugares {
+  display: flex;
+  flex-direction: column;
+}
+
+.piePagina .piepag_parte1 .contenedor_informacion2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.piePagina .piepag_parte1 .contenedor_contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.piePagina .piepag_parte1 span {
+  color: var(--color_white);
+  font-size: 15px;
+}
+
+/*pie de pagina parte 2*/
+
+.piePagina {
+  margin-top: 150px;
+}
+.piePagina .piepag_parte2 {
+  display: flex;
+  position: relative;
+  height: auto;
+  width: 900px;
+  top: -100px;
+  left: 120px;
+  z-index: 1;
+  background: #26282b;
+  padding: 30px;
+  justify-content: center;
+}
+
+.piePagina .piepag_parte2 .contenedorinf p {
+  color: #df991b;
+}
+
+.piePagina .piepag_parte2 .contenedorinf h2 {
+  color: #fff;
+}
+.piePagina .piepag_parte2 .contenedor_envio_inf {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 450px;
+}
+
+.piePagina .piepag_parte2 .contenedor_envio_inf .button_submit {
+  width: 160px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid #df991b;
+  color: #df991b;
+  grid-column: 1/3;
+  justify-self: end;
+}
+
+.piePagina .piepag_parte2 .contenedor_envio_inf .input_background_find {
+  width: 360px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: transparent;
+
+  border: 1px solid #fff;
+  color: var(--color_white);
+}
+
+.piePagina .piepag_parte2 .contenedor_envio_inf input::placeholder {
+  color: #b4b7b7;
+  background-color: transparent;
+  padding: 20px;
+}
+
+/*QUERIES*/
+@media screen and (max-width: 800px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar_header .navbar_nav .visible {
+    background-color: aqua;
+    visibility: hidden;
+  }
+
+  .navbar_header .navbar_nav .icono_menu {
+    background-color: aqua;
+    visibility: visible;
+  }
+
+  .navbar_header .navbar_nav .navbar_logo {
+    background-color: aqua;
+    visibility: visible;
+  }
+}
