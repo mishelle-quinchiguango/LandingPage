@@ -9,18 +9,25 @@
   <body>
     <header class="navbar_header">
       <nav class="navbar_nav">
-        <a href="https://uniqluxury.com.mx/">
-          <img
-            src="./img/logouniqluxury.png"
-            alt="Logo de uniqluxury"
-            class="navbar_logo"
-          />
-        </a>
+        <div class="navbar_logo">
+          <a href="https://uniqluxury.com.mx/">
+            <img
+              src="./img/logouniqluxury.png"
+              alt="Logo de uniqluxury"
+              class="navbar_logo logo_grande"
+            />
+            <img
+              src="./img/logo_pequenio.png"
+              alt="Logo de uniqluxury"
+              class="navbar_logo logo_pequenio"
+            />
+          </a>
+        </div>
         <div class="navbar_container_links">
-          <a class="visible link_login" href="#">LOGIN</a>
-          <a class="visible link_singup" href="#">SING UP</a>
-          <a class="visible link_esp" href="#">ESP</a>
-          <a class="visible link_eng" href="#">ENG</a>
+          <a class="link_login" href="#">LOGIN</a>
+          <a class="link_singup" href="#">SING UP</a>
+          <a class="link_esp" href="#">ESP</a>
+          <a class="link_eng" href="#">ENG</a>
           <img
             class="icono_menu"
             src="./img/icono_menu.png"
@@ -31,67 +38,71 @@
     </header>
 
     <section class="home_section_presentation">
+      <div class="home_section_presentation_background"></div>
+      <div class="home_section_presentation_background_shadow"></div>
       <div>
-        <input
-          class="input_background_find"
-          type="text"
-          placeholder="Ex. Villa Budapest"
-        />
-        <button>
-          <img
-            class="icono_lupa"
-            src="./img/icono_lupa.png"
-            alt="icono de una lupa"
+        <div class="buscador">
+          <input
+            class="input_background_find"
+            type="text"
+            placeholder="Ex. Villa Budapest"
           />
-        </button>
-      </div>
-      <div class="home_section_conteiner_text">
-        <h4>Luxury</h4>
-        <h1>Real Estate</h1>
-        <a class="link_propietaries" href="">View all propietaries</a>
-      </div>
+          <button class="button_lupa">
+            <img
+              class="icono_lupa"
+              src="./img/icono_lupa.png"
+              alt="icono de una lupa"
+            />
+          </button>
+        </div>
+        <div class="home_section_conteiner_text">
+          <h4>Luxury</h4>
+          <h1>Real Estate</h1>
+          <a class="link_propietaries" href="">View all propietaries</a>
+        </div>
 
-      <div class="contenedor_follow">
-        <b class="textoFollow">FOLLOW</b>
+        <div class="contenedor_follow">
+          <b class="textoFollow">FOLLOW</b>
 
-        <img src="./img/Line.png" alt="linea" class="linea" />
+          <img src="./img/Line.png" alt="linea" class="linea" />
 
-        <a href="https://www.linkedin.com/" target="_blank">
-          <img
-            src="./img/icono_linkedlin.png"
-            alt="Icono Linkedlin"
-            class="icono_follow"
-          />
-        </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img
+              src="./img/icono_linkedlin.png"
+              alt="Icono Linkedlin"
+              class="icono_follow"
+            />
+          </a>
 
-        <a href="https://twitter.com/" target="_blank">
-          <img
-            src="./img/icono_twiter.png"
-            alt="Icono Twitter"
-            class="icono_follow"
-          />
-        </a>
-        <a href="https://www.facebook.com/" target="_blank">
-          <img
-            src="./img/icono_facebook.png"
-            alt="Icono Facebook"
-            class="icono_follow"
-          />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img
-            src="./img/icono_instagram.png"
-            alt="Icono Instagram"
-            class="icono_follow"
-          />
-        </a>
-        <a href="https://www.youtube.com/" target="_blank">
-          <img
-            src="./img/icono_youtube.png"
-            alt="Icono Youtube"
-            class="icono_follow"
-          />
-        </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="./img/icono_twiter.png"
+              alt="Icono Twitter"
+              class="icono_follow"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="./img/icono_facebook.png"
+              alt="Icono Facebook"
+              class="icono_follow"
+            />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              src="./img/icono_instagram.png"
+              alt="Icono Instagram"
+              class="icono_follow"
+            />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img
+              src="./img/icono_youtube.png"
+              alt="Icono Youtube"
+              class="icono_follow"
+            />
+          </a>
+        </div>
       </div>
     </section>
 
@@ -104,12 +115,10 @@
         <div class="imagenes1">
           <img src="./img/England_Glasgow.png" alt="imágen de Germany Munich" />
           <div class="imagen-doble">
-            <div >
-          
+            <div>
               <p>England</p>
               <p>Glasgow</p>
             </div>
-            
           </div>
         </div>
 
