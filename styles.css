@@ -37,12 +37,7 @@
   padding: 0 122px;
 }
 /*styles links*/
-/*
-.navbar_header .navbar_container_links{
-    display: flex;
-    gap: 16px;
-}
-*/
+
 .navbar_header .navbar_nav .navbar_container_links a {
   text-decoration: none;
   color: var(--color_white);
@@ -73,8 +68,7 @@
 }
 
 .buscador {
-  /* max-width: 200px;
-  width: 100%; */
+
   position: absolute;
   display: flex;
   align-items: center;
@@ -95,7 +89,6 @@
   position: absolute;
   height: 700px;
   min-width: 100%;
-  /* background: #3a5c909f; */
   background-image: linear-gradient(#3a5c909f, rgba(0, 0, 0, 0.4), #3a907d9f);
 }
 
@@ -122,33 +115,12 @@
   border: 1px solid #fff;
   color: var(--color_white);
   position: relative;
-  /* left: 212%;
-  bottom: 230px; */
-}
-
-.home_section_presentation .input_background_find {
-  width: 360px;
-  height: 40px;
-  border-radius: 100px;
-  background-color: transparent;
-  padding: 0px 0px 0px 20px;
-  text-decoration: none;
-  border: 1px solid #fff;
-  color: var(--color_white);
-  position: relative;
-  /* left: 212%;
-  bottom: 230px; */
 }
 
 input::placeholder {
   color: var(--color_white);
 }
-.home_section_presentation .icono_lupa {
-  /* position: absolute;
-  left: 90%;
-  top: 19%;
-  cursor: pointer; */
-}
+
 .home_section_presentation .home_section_conteiner_text {
   height: fit-content;
   position: absolute;
@@ -637,12 +609,7 @@ h2 {
     margin: 0;
   }
   /*styles links*/
-  /*
-.navbar_header .navbar_container_links{
-    display: flex;
-    gap: 16px;
-}
-*/
+
   .navbar_header .navbar_nav .navbar_container_links a {
     display: none;
   }
@@ -780,11 +747,7 @@ h2 {
     flex-direction: column;
     padding: 0;
     grid-template-columns: inherit;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 50px 50px 100px 0px;
-    gap: 100px;
-    height: 200px; */
+
   }
 
   .contenedor1 .buttons {
@@ -799,10 +762,6 @@ h2 {
     flex-direction: column;
     grid-template-columns: inherit;
 
-    /* display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    overflow-x: hidden;
-    gap: 10px; */
   }
 
   .imagenes1 {
