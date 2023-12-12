@@ -203,6 +203,9 @@ input::placeholder {
   gap: 100px;
   height: 200px;
 }
+.contenedor1 .textos .contenido p{
+  padding-top: 40px;
+}
 
 .contenedor1 .buttons {
   display: flex;
