@@ -415,6 +415,11 @@ h2 {
   padding: 0 !important;
 }
 /* contenedor_collage*/
+.contenedor_collage_principal .contenedor_collage .collage:hover{
+    margin-top: -10px;
+    border: 1px solid black;
+
+}
 .contenedor_collage_principal p {
   color: #df991b;
   text-align: center;
@@ -423,6 +428,10 @@ h2 {
 .contenedor_collage_principal .contenedor_collage p {
   color: black;
   text-align: left;
+  padding: 10px 0 0 10px;
+}
+.contenedor_collage_principal .contenedor_collage h3 {
+  padding: 0 0  0 10px;
 }
 
 .contenedor_collage_principal h2 {
@@ -434,8 +443,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 50px;
   gap: 10px;
-
-  width: auto;
+   width: auto;
 }
 
 .contenedor_collage img {
