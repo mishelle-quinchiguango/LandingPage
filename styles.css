@@ -601,6 +601,13 @@ h2 {
   justify-self: end;
 }
 
+.piePagina .piepag_parte2 .contenedor_envio_inf .button_submit:hover {
+  background-color: var(--color_white);
+  color: black;
+  border: 1pz solid var(--color_white);
+  cursor: pointer;
+}
+
 .piePagina .piepag_parte2 .contenedor_envio_inf .input_background_find {
   width: 360px;
   height: 40px;
