@@ -561,6 +561,7 @@ h2 {
 
 .piePagina {
   margin-top: 150px;
+  padding: 0%
 }
 .piePagina .piepag_parte2 {
   display: flex;
@@ -568,7 +569,7 @@ h2 {
   height: auto;
   width: 900px;
   top: -100px;
-  left: 120px;
+  left: 190px;
   z-index: 1;
   background: #26282b;
   padding: 30px;
@@ -623,6 +624,16 @@ h2 {
   background-color: transparent;
   padding: 20px;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*QUERIES*/
 @media screen and (max-width: 320px) {
